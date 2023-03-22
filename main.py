@@ -35,6 +35,8 @@ def decode(password):
                 res = str(8)
             elif n == "2":
                 res = str(9)
+            elif n == "3":
+                res = str(0)
             final_res += res
         return final_res
 
