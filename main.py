@@ -15,7 +15,28 @@ def encode(password):
 
 
 def decode(password):
-    pass
+        final_res = ""
+        for n in password:
+            if n == "4":
+                res = str(1)
+            elif n == "5":
+                res = str(2)
+            elif n == "6":
+                res = str(3)
+            elif n == "7":
+                res = str(4)
+            elif n == "8":
+                res = str(5)
+            elif n == "9":
+                res = str(6)
+            elif n == "0":
+                res = str(7)
+            elif n == "1":
+                res = str(8)
+            elif n == "2":
+                res = str(9)
+            final_res += res
+        return final_res
 
 
 def display_menu():
@@ -45,6 +66,8 @@ def main():
             print("Invalid input.\n")
             display_menu()
             choice = int(input("Please enter an option: "))
+
+
 
 
 if __name__ == "__main__":
